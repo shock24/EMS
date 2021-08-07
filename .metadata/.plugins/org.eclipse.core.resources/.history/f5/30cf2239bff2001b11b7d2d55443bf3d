@@ -1,0 +1,26 @@
+package com.homeinsurance.dao;
+
+import org.hibernate.SessionFactory;
+
+import com.homeinsurance.entities.AdminUser;
+
+public class AdminDao {
+	private SessionFactory factory;
+
+	public AdminDao() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public AdminDao(SessionFactory factory) {
+		super();
+		this.factory = factory;
+	}
+	
+	public AdminUser getUserByEmailAndPassword()
+	{
+		AdminUser user = null;
+		
+		return user;
+	}
+
+}

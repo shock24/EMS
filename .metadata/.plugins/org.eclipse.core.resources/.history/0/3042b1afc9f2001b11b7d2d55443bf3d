@@ -1,0 +1,48 @@
+package com.homeinsurance.entities;
+
+import javax.persistence.*;
+
+@Entity
+public class Regulation {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int regId;
+	private String desc;
+	@ManyToOne
+	private Department department;
+
+	public Regulation() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public Regulation(String desc, Department department) {
+		super();
+		this.desc = desc;
+		this.department = department;
+	}
+	public String getDesc() {
+		return desc;
+	}
+
+	public void setDesc(String desc) {
+		this.desc = desc;
+	}
+
+	public Department getDepartment() {
+		return department;
+	}
+
+	public void setDepartment(Department department) {
+		this.department = department;
+	}
+
+	@Override
+	public String toString() {
+		return "Regulation [regId=" + regId + ", deptId=" + deptId + ", desc=" + desc + ", department=" + department + "]";
+	}
+	
+	
+	
+
+}

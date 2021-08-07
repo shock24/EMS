@@ -1,0 +1,50 @@
+package com.homeinsurance.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+
+import com.homeinsurance.entities.Department;
+
+public class DepartmentDao {
+
+	private SessionFactory factory;
+	
+	public DepartmentDao() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public DepartmentDao(SessionFactory factory) {
+		super();
+		this.factory = factory;
+	}
+	
+	public List<Department> getDepartments(){
+		List<Department> departments = null;
+		try{
+			String query = "from Department";
+			Session session = this.factory.openSession();
+			Query q = session.createQuery(query);
+			departments = q.getResultList();
+		} 
+		catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		return departments;
+	}
+	
+	public Department getDepartmentById(int id)
+	{
+		try{
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+	}
+
+}

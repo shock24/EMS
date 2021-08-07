@@ -1,0 +1,15 @@
+package com.homeinsurance.dao;
+
+import org.hibernate.SessionFactory;
+
+public class RegulationDao {
+
+	private SessionFactory factory;
+	
+	public RegulationDao(SessionFactory factory) {
+		this.factory = factory;
+	}
+	
+	
+
+}

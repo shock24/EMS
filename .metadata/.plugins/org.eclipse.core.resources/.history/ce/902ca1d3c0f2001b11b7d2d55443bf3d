@@ -1,0 +1,50 @@
+package com.homeinsurance.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import com.homeinsurance.dao.AdminDao;
+import com.homeinsurance.entities.AdminUser;
+import com.homeinsurance.helper.FactoryProvider;
+
+/**
+ * Servlet implementation class LoginServlet
+ */
+public class LoginServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public LoginServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		try(PrintWriter out = response.getWriter()){
+			try{
+				String userType = request.getParameter("userType");
+				if(userType.equals("admin"))
+				{
+					AdminDao dao = new AdminDao(FactoryProvider.getFactory());
+					AdminUser user = dao.getUserByEmailAndPassword(email, password)
+				}
+				else if(userType.equals("normal"))
+				{
+					out.println("Log in as normal admin");
+				}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+		}
+	}
+
+}

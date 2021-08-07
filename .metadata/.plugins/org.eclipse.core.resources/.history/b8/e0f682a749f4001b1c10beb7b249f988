@@ -1,0 +1,30 @@
+package com.homeinsurance.dao;
+
+import java.util.List;
+
+import org.hibernate.SessionFactory;
+
+import com.homeinsurance.entities.Regulation;
+
+public class RegulationDao {
+
+	private SessionFactory factory;
+	
+	public RegulationDao(SessionFactory factory) {
+		this.factory = factory;
+	}
+	
+	public List<Regulation> getAllRegulations(int deptId){
+		List<Regulation> allRegulations = null;
+		try{
+			
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return allRegulations;
+	}
+	
+
+}

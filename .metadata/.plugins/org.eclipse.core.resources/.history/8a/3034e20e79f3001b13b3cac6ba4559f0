@@ -1,0 +1,31 @@
+package com.homeinsurance.dao;
+
+import java.util.List;
+import org.hibernate.SessionFactory;
+import com.homeinsurance.entities.Department;
+
+public class DepartmentDao {
+
+	private SessionFactory factory;
+	
+	public DepartmentDao() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public DepartmentDao(SessionFactory factory) {
+		super();
+		this.factory = factory;
+	}
+	
+	public List<Department> getDepartments(){
+		List<Department> departments = null;
+		try{
+			
+		} catch(Exception e){
+			e.printStackTrace();
+		}
+		
+		return departments;
+	}
+
+}

@@ -1,0 +1,19 @@
+package com.homeinsurance.dao;
+
+import org.hibernate.SessionFactory;
+
+public class NormalDao {
+
+	private SessionFactory factory;
+	
+	public NormalDao() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public NormalDao(SessionFactory factory) {
+		super();
+		this.factory = factory;
+	}
+
+	
+}

@@ -1,0 +1,20 @@
+package com.homeinsurance.dao;
+
+import org.hibernate.SessionFactory;
+
+public class DepartmentDao {
+
+	private SessionFactory factory;
+	
+	public DepartmentDao() {
+		// TODO Auto-generated constructor stub
+	}
+	
+	public DepartmentDao(SessionFactory factory) {
+		super();
+		this.factory = factory;
+	}
+	
+	
+
+}

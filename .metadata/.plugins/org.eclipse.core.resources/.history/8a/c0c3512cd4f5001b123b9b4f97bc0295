@@ -1,0 +1,9 @@
+package com.homeinsurance.dao;
+
+public class NormalDao {
+
+	public NormalDao() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

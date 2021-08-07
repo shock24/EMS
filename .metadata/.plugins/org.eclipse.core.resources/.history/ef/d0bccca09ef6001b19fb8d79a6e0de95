@@ -1,0 +1,36 @@
+package com.homeinsurance.dao;
+
+import java.util.List;
+
+import org.hibernate.Session;
+import org.hibernate.SessionFactory;
+import org.hibernate.query.Query;
+
+import com.homeinsurance.entities.Regulation;
+
+public class RegulationDao {
+
+	private SessionFactory factory;
+	
+	public RegulationDao(SessionFactory factory) {
+		this.factory = factory;
+	}
+	
+	public List<Regulation> getAllRegulations(int deptId){
+		List<Regulation> allRegulations = null;
+		try{
+			String query = "from Regulation as r where r.department.deptId = :id";
+			Session session = this.factory.openSession();
+			Query q = session.createQuery(query);
+			q.setParameter("id", deptId);
+			allRegulations = q.getResultList();
+		}
+		catch(Exception e)
+		{
+			e.printStackTrace();
+		}
+		return allRegulations;
+	}
+	
+
+}

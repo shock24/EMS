@@ -1,0 +1,9 @@
+package com.homeinsurance.dao;
+
+public class RegulationDao {
+
+	public RegulationDao() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

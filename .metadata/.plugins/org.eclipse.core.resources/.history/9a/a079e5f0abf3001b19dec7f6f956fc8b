@@ -1,0 +1,64 @@
+package com.homeinsurance.servlets;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.hibernate.Session;
+import org.hibernate.Transaction;
+import org.hibernate.query.Query;
+
+import com.homeinsurance.dao.DepartmentDao;
+import com.homeinsurance.entities.Department;
+import com.homeinsurance.helper.FactoryProvider;
+
+/**
+ * Servlet implementation class DeleteDepartmentServlet
+ */
+public class DeleteDepartmentServlet extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+    /**
+     * @see HttpServlet#HttpServlet()
+     */
+    public DeleteDepartmentServlet() {
+        super();
+        // TODO Auto-generated constructor stub
+    }
+    
+	protected void service(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+//		System.out.println(request.getParameter("deleteDept").getClass());
+		try(PrintWriter out = response.getWriter()){
+			String[] dept = request.getParameterValues("deleteDept");
+			try{
+				for(String s : dept)
+				{
+					Session hibernateSession = FactoryProvider.getFactory().openSession();
+					DepartmentDao dao = new DepartmentDao();
+					Department d = dao.getDepartmentById(Integer.parseInt(s));
+					System.out.println(d);
+					Transaction tx = hibernateSession.beginTransaction();
+					
+					hibernateSession.delete(d);
+					
+					tx.commit();
+					hibernateSession.close();
+					
+					response.sendRedirect("admin.jsp");
+					return;
+				}
+			}
+			catch(Exception e)
+			{
+				e.printStackTrace();
+			}
+		}
+		
+		
+	}
+
+}

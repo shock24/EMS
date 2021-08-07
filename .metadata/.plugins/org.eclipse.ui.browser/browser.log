@@ -1,0 +1,48 @@
+
+Jul 28, 2021 17:02:26.50 NEW SESSION
+Jul 28, 2021 17:02:26.50 [Parent 16572, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Jul 28, 2021 17:03:14.16 
+Jul 28, 2021 17:03:14.18 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Jul 28, 2021 17:03:14.18 
+Jul 28, 2021 17:04:23.20 [Parent 7432, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Jul 28, 2021 17:04:38.09 [Parent 12148, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+Jul 28, 2021 17:04:38.80 
+Jul 28, 2021 17:04:38.83 ###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+Jul 28, 2021 17:04:38.83 
+
+Jul 30, 2021 21:55:43.36 NEW SESSION
+Jul 30, 2021 21:55:43.37 [9516:9244:0730/215543.328:ERROR:external_registry_loader_win.cc(158)] File C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx for key Software\Google\Chrome\Extensions\ngpampappnmepgilojfohadhhmbhlaek does not exist or is not readable.
+Jul 30, 2021 21:55:44.19 [9516:16624:0730/215544.129:ERROR:data_pack.cc(126)] Could not open pak file for writing: The process cannot access the file because it is being used by another process. (0x20)
+Jul 30, 2021 21:55:47.59 [9516:14360:0730/215547.597:ERROR:device_event_log_impl.cc(214)] [21:55:47.597] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Jul 31, 2021 18:57:10.97 NEW SESSION
+Jul 31, 2021 18:57:10.97 [11108:13320:0731/185710.766:ERROR:external_registry_loader_win.cc(158)] File C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx for key Software\Google\Chrome\Extensions\ngpampappnmepgilojfohadhhmbhlaek does not exist or is not readable.
+Jul 31, 2021 18:57:11.71 [11108:7704:0731/185711.689:ERROR:data_pack.cc(126)] Could not open pak file for writing: The process cannot access the file because it is being used by another process. (0x20)
+Jul 31, 2021 18:57:14.11 [11108:12168:0731/185714.108:ERROR:device_event_log_impl.cc(214)] [18:57:14.108] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+
+Aug 02, 2021 14:59:00.45 NEW SESSION
+Aug 02, 2021 14:59:00.46 [2740:5336:0802/145900.407:ERROR:external_registry_loader_win.cc(158)] File C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx for key Software\Google\Chrome\Extensions\ngpampappnmepgilojfohadhhmbhlaek does not exist or is not readable.
+Aug 02, 2021 14:59:01.58 [2740:3080:0802/145901.495:ERROR:data_pack.cc(126)] Could not open pak file for writing: The process cannot access the file because it is being used by another process. (0x20)
+Aug 02, 2021 14:59:05.53 [2740:17288:0802/145905.534:ERROR:device_event_log_impl.cc(214)] [14:59:05.535] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Aug 02, 2021 15:03:12.59 [2740:17288:0802/150312.557:ERROR:device_event_log_impl.cc(214)] [15:03:12.557] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Aug 02, 2021 15:03:45.95 [2740:17288:0802/150345.941:ERROR:device_event_log_impl.cc(214)] [15:03:45.941] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Aug 02, 2021 15:03:45.97 [2740:17288:0802/150345.950:ERROR:device_event_log_impl.cc(214)] [15:03:45.950] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No more data is available. (0x103)
+Aug 02, 2021 17:42:37.66 [2740:17288:0802/174237.665:ERROR:device_event_log_impl.cc(214)] [17:42:37.664] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Aug 02, 2021 17:43:08.91 [2740:17288:0802/174308.894:ERROR:device_event_log_impl.cc(214)] [17:43:08.893] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Aug 02, 2021 17:43:08.91 [2740:17288:0802/174308.903:ERROR:device_event_log_impl.cc(214)] [17:43:08.903] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No more data is available. (0x103)
+Aug 02, 2021 19:15:14.95 [2740:17288:0802/191514.944:ERROR:device_event_log_impl.cc(214)] [19:15:14.943] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Aug 02, 2021 19:15:21.48 [2740:17288:0802/191521.472:ERROR:device_event_log_impl.cc(214)] [19:15:21.472] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Aug 02, 2021 19:15:21.50 [2740:17288:0802/191521.482:ERROR:device_event_log_impl.cc(214)] [19:15:21.482] USB: usb_service_win.cc:281 SetupDiEnumDeviceInterfaces: No more data is available. (0x103)
+Aug 02, 2021 19:47:56.86 [2740:17288:0802/194756.859:ERROR:device_event_log_impl.cc(214)] [19:47:56.859] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+
+Aug 02, 2021 21:39:46.54 NEW SESSION
+Aug 02, 2021 21:39:46.54 [10512:13924:0802/213946.541:ERROR:external_registry_loader_win.cc(158)] File C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx for key Software\Google\Chrome\Extensions\ngpampappnmepgilojfohadhhmbhlaek does not exist or is not readable.
+Aug 02, 2021 21:39:48.41 [10512:11108:0802/213948.348:ERROR:data_pack.cc(126)] Could not open pak file for writing: The process cannot access the file because it is being used by another process. (0x20)
+Aug 02, 2021 21:39:52.09 [10512:2004:0802/213952.088:ERROR:device_event_log_impl.cc(214)] [21:39:52.088] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)
+Aug 02, 2021 21:59:49.69 [10512:2004:0802/215949.663:ERROR:device_event_log_impl.cc(214)] [21:59:49.663] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+Aug 02, 2021 23:03:00.20 [10512:2004:0802/230300.176:ERROR:device_event_log_impl.cc(214)] [23:03:00.176] USB: usb_service_win.cc:258 Failed to get device driver name: Element not found. (0x490)
+
+Aug 05, 2021 17:03:56.51 NEW SESSION
+Aug 05, 2021 17:03:56.51 [2304:8656:0805/170356.198:ERROR:external_registry_loader_win.cc(158)] File C:\Program Files (x86)\Internet Download Manager\IDMGCExt.crx for key Software\Google\Chrome\Extensions\ngpampappnmepgilojfohadhhmbhlaek does not exist or is not readable.
+Aug 05, 2021 17:03:57.49 [2304:9684:0805/170357.380:ERROR:data_pack.cc(126)] Could not open pak file for writing: The process cannot access the file because it is being used by another process. (0x20)
+Aug 05, 2021 17:04:00.47 [2304:11604:0805/170400.478:ERROR:device_event_log_impl.cc(214)] [17:04:00.479] USB: usb_device_handle_win.cc:1048 Failed to read descriptor from node connection: A device attached to the system is not functioning. (0x1F)

@@ -1,0 +1,9 @@
+package com.homeinsurance.dao;
+
+public class AdminDao {
+
+	public AdminDao() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
